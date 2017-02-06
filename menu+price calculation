@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script>
+function total_price ()
+{
+    var mag1 = document.getElementById("m1").value;
+    var mag2 = document.getElementById("m2").value;
+	var mag3 = document.getElementById("m3").value;
+	var mag4 = document.getElementById("m5").value;
+	var mag5 = document.getElementById("m4").value;
+	
+ 
+	var qua1 = document.getElementById("m").value;
+	var	qua2 = document.getElementById("vm").value;
+	var	qua3 = document.getElementById("em").value;
+	var	qua4 = document.getElementById("sm").value;
+	var	qua5 = document.getElementById("cm").value;
+
+	
+	
+	var g1 = mag1*qua1;
+	var g2 = mag2*qua2;
+	var g3 = mag5*qua3;
+	var g4 = mag4*qua4;
+	var g5 = mag5*qua5;
+
+	
+	  alert(g1)
+	  alert(g2)
+	  alert(g3)
+	  alert(g4)
+	  alert(g5)
+	  
+	  
+	var total=g1+g2+g3+g4+g5;
+	document.getElementById("total").innerHTML = total;
+	
+
+	
+	}
+
+
+	
+</script>
+</head>
+<body>
+<form>
+
+
+
+  <h1>MENU</h1>
+  <h3>1.SIMPLE MAGGI<input type="checkbox" id="m1" value="40">QUANTITY<input type="NUMBER" id="m" min="0" value="0" max="10"></h3><br>
+  <h3>2.VEG MAGGI<input type="checkbox" id="m2" value="50">QUANTITY<input type="NUMBER" id="vm" min="0" value="0" max="10"></h3><br>
+  <h3>3.EGG MAGGI<input type="checkbox" id="m3" value="60">QUANTITY<input type="NUMBER" id="em" min="0" value="0" max="10"></h3><br>
+  <h3>4.SOUPE MAGGI<input type="checkbox" id="m4" value="70">QUANTITY<input type="NUMBER" id="sm" min="0" value="0" max="10"></h3><br>
+  <h3>5.CHEESE MAGGI<input type="checkbox" id="m5" value="80">QUANTITY<input type="NUMBER" id="cm" min="0" value="0" max="10"></h3><br>
+  
+  
+  
+  
+  <h4><input type="button" value="SUBMIT" onClick="total_price()" document.write(total)></input>
+  <h4><input type="reset" value="RESET"></input>
+</form>
+<p>The Result is : <br>
+<span id = "total"></span>
+</p>		
+</body>
+</html>
