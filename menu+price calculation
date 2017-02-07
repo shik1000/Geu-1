@@ -4,18 +4,18 @@
 <script>
 function total_price ()
 {
-    var mag1 = document.getElementById("m1").value;
-    var mag2 = document.getElementById("m2").value;
+    	var mag1 = document.getElementById("m1").value;
+        var mag2 = document.getElementById("m2").value;
 	var mag3 = document.getElementById("m3").value;
 	var mag4 = document.getElementById("m5").value;
 	var mag5 = document.getElementById("m4").value;
 	
  
 	var qua1 = document.getElementById("m").value;
-	var	qua2 = document.getElementById("vm").value;
-	var	qua3 = document.getElementById("em").value;
-	var	qua4 = document.getElementById("sm").value;
-	var	qua5 = document.getElementById("cm").value;
+	var qua2 = document.getElementById("vm").value;
+	var qua3 = document.getElementById("em").value;
+	var qua4 = document.getElementById("sm").value;
+	var qua5 = document.getElementById("cm").value;
 
 	
 	
